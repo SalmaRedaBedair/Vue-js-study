@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+
+<body>
+    <div id="app-root">
+        <p>My name is {{ name }}</p>
+        <p>My age is {{ age }}</p>
+        <h2>{{ sayHi("Morning", name) }}</h2>
+        <h3>{{ sayTest() }}</h3>
+        <link :href="link">
+        <!--
+Can't use {{ link }} directly inside HTML attributes like href,
+so we use v-bind: to bind the attribute to the Vue data property.
+v-bind: is always used with Vue's data properties to dynamically bind
+them to HTML attributes. This allows for reactive and dynamic updates
+when the data changes.
+v-bind: can be abbreviated to just : before the attribute name.
+-->
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
