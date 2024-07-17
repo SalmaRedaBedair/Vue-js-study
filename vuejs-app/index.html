@@ -14,6 +14,7 @@
         <h2>{{ sayHi("Morning", name) }}</h2>
         <h3>{{ sayTest() }}</h3>
         <link :href="link">
+        <h1>Number: {{ number }}</h1>
         <!--
 Can't use {{ link }} directly inside HTML attributes like href,
 so we use v-bind: to bind the attribute to the Vue data property.
@@ -22,6 +23,7 @@ them to HTML attributes. This allows for reactive and dynamic updates
 when the data changes.
 v-bind: can be abbreviated to just : before the attribute name.
 -->
+        <button v-on:click="increment">click</button>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

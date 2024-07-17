@@ -5,7 +5,8 @@ createApp({
         return {
             name: "Salma",
             age: 22,
-            link: "test.com"
+            link: "test.com",
+            number: 0
         };
     },
     methods: {
@@ -14,6 +15,9 @@ createApp({
         },
         sayTest: function() {
             return "Loma";
-        }
+        },
+        increment() {
+            this.number++;
+        },
     }
 }).mount("#app-root");
