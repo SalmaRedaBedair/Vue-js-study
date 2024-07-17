@@ -19,5 +19,8 @@ createApp({
         increment() {
             this.number++;
         },
+        testMe(){
+            console.log("Hello, I'm a test method");
+        }
     }
 }).mount("#app-root");

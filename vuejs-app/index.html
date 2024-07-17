@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn Vue.js</title>
 </head>
 
@@ -13,7 +13,7 @@
         <p>My age is {{ age }}</p>
         <h2>{{ sayHi("Morning", name) }}</h2>
         <h3>{{ sayTest() }}</h3>
-        <link :href="link">
+        <link :href="link" />
         <h1>Number: {{ number }}</h1>
         <!--
 Can't use {{ link }} directly inside HTML attributes like href,
@@ -23,7 +23,12 @@ them to HTML attributes. This allows for reactive and dynamic updates
 when the data changes.
 v-bind: can be abbreviated to just : before the attribute name.
 -->
-        <button v-on:click="increment">click</button>
+        <button @click="increment">click</button>
+        <br>
+        <a rel="stylesheet" href="https://www.google.co.uk/" @click.prevent>google</a>
+        <!--to prevent event -->
+        <br>
+        <a href="#" @click.once="testMe">test me</a>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
