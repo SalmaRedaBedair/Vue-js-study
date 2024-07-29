@@ -9,24 +9,10 @@
 
 <body>
     <div id="app-root">
-        <p>My name is {{ name }}</p>
-        <p>My age is {{ age }}</p>
-        <h2>{{ sayHi("Morning", name) }}</h2>
-        <h3>{{ sayTest() }}</h3>
-        <link :href="link">
-        <h1>Number: {{ number }}</h1>
-        <!--
-Can't use {{ link }} directly inside HTML attributes like href,
-so we use v-bind: to bind the attribute to the Vue data property.
-v-bind: is always used with Vue's data properties to dynamically bind
-them to HTML attributes. This allows for reactive and dynamic updates
-when the data changes.
-v-bind: can be abbreviated to just : before the attribute name.
--->
-        <button v-on:click="increment">click</button>
+        <h1>{{ name }}</h1>
     </div>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
     <script src="./script.js"></script>
 </body>
 
